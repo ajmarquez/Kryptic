@@ -4,5 +4,6 @@ require './environments'
 require './main/kryptic'
 
 
-class Knotes < ActiveRecord::Base
+class KrypticApp < Sinatra::Application
+
 end
