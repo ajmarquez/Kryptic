@@ -9,12 +9,16 @@ gem 'sinatra-flash'
 gem 'sinatra-redirect-with-flash'
 gem 'pg'
 gem 'rake'
-gem 'rspec'
+
+
+group :test do
+
+end
 
 group :development do
  gem "tux"
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec'
 end
