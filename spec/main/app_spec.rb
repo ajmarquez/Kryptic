@@ -12,11 +12,18 @@ describe 'Kryptic App' do
   describe "#availability" do
 
     context "when domain is found" do
-      it "returns TRUE"
+
+      it "returns TRUE" do
+
+        get '/domains'
+        expect(last_response).to be_ok
+        expect(last_response.body).to eq('Hello there')
+      end
+
     end
 
     context "when domain is NOT found" do
-      it "answers FALSE" 
+      it "answers FALSE"
     end
   end
 
